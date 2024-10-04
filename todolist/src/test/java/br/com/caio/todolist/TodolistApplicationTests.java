@@ -1,4 +1,4 @@
-package br.com.caio;
+package br.com.caio.todolist;
 
 import br.com.caio.todolist.entity.Todo;
 import org.junit.jupiter.api.Test;
