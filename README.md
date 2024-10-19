@@ -62,8 +62,8 @@ $ java -jar target/todolist-0.0.1-SNAPSHOT.jar
     ```json
     {
       "id": 1,
-      "nome": "Estudar java e Spring",
-      "descricao": "Apronfundar no Java",
+      "nome": "Estudar Java e Spring",
+      "descricao": "Aprofundar no Java",
       "realizado": false,
       "prioridade": 1
       
@@ -116,11 +116,11 @@ $ java -jar target/todolist-0.0.1-SNAPSHOT.jar
 - **URL:** `/todos/{id}`
 - **Descrição:** Remove uma tarefa existente com base no ID.
 - **Exemplo de Requisição:**
-    - No **Insomnia** ou **Swagger UI**, escolha o método **DELETE** e insira a URL: `http://localhost:8080/todos/1`.
-
-- **Exemplo de Resposta:**
+    - No **Insomnia** ou **Swagger UI**, escolha o método **DELETE** e insira a URL:
     ```json
-    []
+    http://localhost:8080/todos/1
+
+    [ ]
     ```
 
 
