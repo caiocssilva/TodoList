@@ -4,17 +4,15 @@ import br.com.caio.todolist.entity.Todo;
 import br.com.caio.todolist.service.TodoService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
-
+import lombok.*;
 import java.util.List;
 
 @RestController
 @RequestMapping("/todos")
+@RequiredArgsConstructor
 public class TodoController {
-    private TodoService todoService;
 
-    public TodoController(TodoService todoService) {
-        this.todoService = todoService;
-    }
+    private final TodoService todoService;
 
     @PostMapping
     List<Todo> create(@RequestBody @Valid Todo todo) {

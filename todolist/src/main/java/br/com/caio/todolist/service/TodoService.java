@@ -4,16 +4,14 @@ import br.com.caio.todolist.entity.Todo;
 import br.com.caio.todolist.repository.TodoRepository;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-
+import lombok.*;
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class TodoService {
-    private TodoRepository todoRepository;
 
-    public TodoService(TodoRepository todoRepository) {
-        this.todoRepository = todoRepository;
-    }
+    private final TodoRepository todoRepository;
 
     public List<Todo> create(Todo todo) {
         todoRepository.save(todo);
